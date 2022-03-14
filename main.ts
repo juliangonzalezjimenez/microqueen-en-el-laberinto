@@ -3,7 +3,7 @@ function girar90grados () {
     basic.pause(260)
     maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 20)
     maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 20)
-    basic.pause(260)
+    basic.pause(500)
     maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 20)
 }
 basic.forever(function () {

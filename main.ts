@@ -25,6 +25,10 @@ basic.forever(function () {
             if (maqueen.Ultrasonic(PingUnit.Centimeters) < 4) {
                 maqueen.motorStop(maqueen.Motors.All)
                 girar90gradosaderecha()
+                if (maqueen.Ultrasonic(PingUnit.Centimeters) < 4) {
+                    maqueen.motorStop(maqueen.Motors.All)
+                    girar90gradosaderecha()
+                }
             }
         }
     } else {
